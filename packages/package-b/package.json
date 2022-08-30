@@ -19,6 +19,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "eslint": "^8.23.0"
+    "eslint": "^8.23.0",
+    "lodash": "^4.17.21"
   }
 }

@@ -19,7 +19,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "eslint": "^8.23.0"
+    "eslint": "^8.23.0",
+    "package-b":"1.0.4"
   },
   "devDependencies": {
     "lodash": "^4.17.21"
