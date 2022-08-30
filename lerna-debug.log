@@ -1,0 +1,49 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   push: false,
+0 silly argv   'conventional-commits': true,
+0 silly argv   conventionalCommits: true,
+0 silly argv   lernaVersion: '5.4.3',
+0 silly argv   '$0': 'lerna'
+0 silly argv }
+1 notice cli v5.4.3
+2 verbose rootPath /Users/lifuyuan/project/work/project/lerna-demo
+3 info current version {
+3 info current version   changelogPreset: {
+3 info current version     name: 'conventionalcommits',
+3 info current version     types: [
+3 info current version       [Object], [Object],
+3 info current version       [Object], [Object],
+3 info current version       [Object], [Object],
+3 info current version       [Object], [Object],
+3 info current version       [Object], [Object],
+3 info current version       [Object], [Object]
+3 info current version     ]
+3 info current version   }
+3 info current version }
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly getCurrentBranch
+7 verbose currentBranch master
+8 silly hasTags
+9 verbose hasTags true
+10 silly git-describe.sync "package-a@1.0.3-1-g771a8d3" => {"lastTagName":"package-a@1.0.3","lastVersion":"1.0.3","refCount":"1","sha":"771a8d3","isDirty":false}
+11 info Looking for changed packages since package-a@1.0.3
+12 silly checking diff packages/package-a
+13 silly no diff found in package-a
+14 silly checking diff packages/package-b
+15 silly no diff found in package-b
+16 silly checking diff packages/package-c
+17 silly found diff in packages/package-c/index.js
+18 verbose filtered diff [ 'packages/package-c/index.js' ]
+19 verbose updated package-c
+20 verbose git-describe undefined => "package-a@1.0.3-1-g771a8d3"
+21 silly git-describe parsed => {"lastTagName":"package-a@1.0.3","lastVersion":"1.0.3","refCount":"1","sha":"771a8d3","isDirty":false}
+22 error TypeError: Invalid Version: [object Object]
+22 error     at new SemVer (/Users/lifuyuan/project/work/project/lerna-demo/node_modules/semver/classes/semver.js:19:13)
+22 error     at compare (/Users/lifuyuan/project/work/project/lerna-demo/node_modules/semver/functions/compare.js:3:32)
+22 error     at Object.lt (/Users/lifuyuan/project/work/project/lerna-demo/node_modules/semver/functions/lt.js:2:29)
+22 error     at VersionCommand.setGlobalVersionFloor (/Users/lifuyuan/project/work/project/lerna-demo/node_modules/@lerna/version/index.js:416:18)
+22 error     at /Users/lifuyuan/project/work/project/lerna-demo/node_modules/@lerna/version/index.js:387:37
+22 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+22 error     at async Promise.all (index 0)
