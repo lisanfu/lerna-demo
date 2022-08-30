@@ -1,3 +1,3 @@
 console.log('package-b');
 console.log('test');
-console.log('bc');
+console.log('precommit');

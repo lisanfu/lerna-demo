@@ -5,7 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint *.js"
+    "lint": "eslint *.js",
+    "lint-staged": "lint-staged",
+    "preversion": "npm run codecheck",
+    "codecheck": "echo \"开始codecheck\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
   },
   "keywords": [],
   "author": "",
